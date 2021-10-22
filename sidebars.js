@@ -450,6 +450,7 @@ module.exports = {
         "temporal-explained/introduction",
         "temporal-explained/workflows",
         "temporal-explained/activities",
+        "temporal-explained/task-queues-and-workers",
         "temporal-explained/timeouts-and-retries",
         "temporal-explained/clusters",
         "temporal-explained/visibility",
