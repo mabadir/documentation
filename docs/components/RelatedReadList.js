@@ -6,10 +6,10 @@ import {v4 as uuidv4} from "uuid";
 export function RelatedReadContainer({children}) {
   let rl = [];
   if (React.Children.count(children) > 1) {
-    React.Children.forEach(children, function(child) {
+    React.Children.forEach(children, function (child) {
       let id = uuidv4();
       rl.push({id: id, child: child});
-    })
+    });
   }
   return (
     <div className={"related-read-div"}>
@@ -17,7 +17,7 @@ export function RelatedReadContainer({children}) {
       {rl.length > 1 ? (
         <ul className="related-read-list">
           {rl.map(({id, child}) => (
-              <li key={id}>{child}</li>
+            <li key={id}>{child}</li>
           ))}
         </ul>
       ) : (

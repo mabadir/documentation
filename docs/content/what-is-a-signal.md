@@ -25,7 +25,7 @@ title="Signal"
 - A Signal is meant to deliver notifications and/or updates to a running Workflow Execution that can change variable values and the state of Workflow Execution.
 - Signals can receive data, but cannot return it.
 - When a Signal is received by the Temporal Cluster, the Cluster persists the Signal (which includes it payload) as an Event in the Workflow Execution's Event History.
-The Workflow can then handle the Signal at any time afterwards without the risk of losing the information.
+  The Workflow can then handle the Signal at any time afterwards without the risk of losing the information.
 
 <RelatedReadContainer>
   <RelatedReadItem page={HowToSignalsInGo} />
