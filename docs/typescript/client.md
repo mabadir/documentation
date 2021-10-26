@@ -145,7 +145,7 @@ This is useful for starting long lived workflows that you can interact with usin
 
 ### Misc ways to start Workflows
 
-- If your workflow uses [Signals](/docs/concepts/signals), you can also send a Signal that might start a workflow using the `signalWithStart` API. See the [Signals docs](/docs/typescript/workflows) for details.
+- If your workflow uses [Signals](/docs/content/what-is-a-signal), you can also send a Signal that might start a workflow using the `signalWithStart` API. See the [Signals docs](/docs/typescript/workflows) for details.
 - (For advanced usecases) You can also start or execute a Workflow directly from a [WorkflowClient](https://typescript.temporal.io/api/classes/client.workflowclient/), without creating a Handle first.
 
 ## How to cancel a Workflow

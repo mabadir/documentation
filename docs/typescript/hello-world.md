@@ -28,7 +28,7 @@ Any async function can be used as an Activity as long as its parameters and retu
 
 In the TypeScript SDK, each Workflow execution is run in a separate V8 isolate context in order to provide a [deterministic runtime](/docs/typescript/determinism).
 
-A Workflow is defined as an async function, in its body you may set listeners for processing [Signals](/docs/concepts/signals) and responding to [Queries](/docs/concepts/queries).
+A Workflow is defined as an async function, in its body you may set listeners for processing [Signals](/docs/content/what-is-a-signal) and responding to [Queries](/docs/content/what-is-a-query).
 
 The snippet below uses `createActivityHandle` to create a function that, when called, schedules an Activity in the system.
 

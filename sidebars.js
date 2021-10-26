@@ -451,6 +451,7 @@ module.exports = {
         "temporal-explained/workflows",
         "temporal-explained/activities",
         "temporal-explained/timeouts-and-retries",
+        "temporal-explained/signals-and-queries",
         "temporal-explained/clusters",
         "temporal-explained/visibility",
       ],

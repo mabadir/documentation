@@ -4,6 +4,12 @@ title: Workflows in TypeScript
 sidebar_label: Workflows
 ---
 
+import RelatedReadList, {RelatedReadContainer, RelatedReadItem} from '../components/RelatedReadList.js'
+
+<!-- prettier-ignore -->
+import * as WhatIsASignal from '../content/what-is-a-signal.md'
+import * as WhatIsAQuery from '../content/what-is-a-query.md'
+
 > **@temporalio/workflow** [![NPM](https://img.shields.io/npm/v/@temporalio/workflow)](https://www.npmjs.com/package/@temporalio/workflow) [API reference](https://typescript.temporal.io/api/namespaces/workflow) | [GitHub source](https://github.com/temporalio/sdk-typescript/tree/main/packages/workflow)
 
 **Workflows are async functions that can orchestrate Activities and access special Workflow APIs, subject to deterministic limitations**.
@@ -64,31 +70,12 @@ If you do, please [get in touch on Slack](https://temporal.io/slack), we would l
 
 ### Signals and Queries
 
-<details>
-<summary>
-  <a href="/docs/concepts/signals">Signals</a> are a way to send data IN to a running Workflow.
-</summary>
-
-import WhenToSignals from '../content/when-to-use-signals.md'
-
-<WhenToSignals />
-
-</details>
-
-<details>
-<summary>
-  <a href="/docs/concepts/queries">Queries</a> are a way to read data OUT from a running Workflow.
-</summary>
-
-- Queries can receive arguments, and return data, but must not mutate Workflow state.
-- If a Query is made to a completed Workflow, the final value is returned.
-
-</details>
-
-Signals and Queries are almost always used together.
-If you wanted to send data in, you probably will want to read data out.
-
 #### How to define and receive Signals and Queries
+
+<RelatedReadContainer>
+  <RelatedReadItem page={WhatIsASignal} />
+  <RelatedReadItem page={WhatIsAQuery} />
+</RelatedReadContainer>
 
 - To add a Signal to a Workflow, call [`defineSignal`](https://typescript.temporal.io/api/namespaces/workflow/#definesignal) with a name, and then attach a listener with `setListener`.
 - To add a Query to a Workflow, call [`defineQuery`](https://typescript.temporal.io/api/namespaces/workflow/#definequery) with a name, and then attach a listener with `setListener`.
