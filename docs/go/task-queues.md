@@ -4,17 +4,6 @@ title: Task Queues in Go
 sidebar_label: Task Queues
 ---
 
-## What is a Task Queue?
-
-import SharedTaskQueuesBasic from '../shared/task-queues-basic.md'
-
-<SharedTaskQueuesBasic
-workflowLink="/docs/go/workflows"
-workerLink="/docs/go/workers"
-/>
-
-## How to use Task Queues
-
 In Go, a Task Queue is represented in code by name, as a `string`.
 There are four places where the name of the Task Queue is supplied by the developer.
 
