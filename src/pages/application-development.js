@@ -10,7 +10,7 @@ const features = [
   {
     title: <>Go</>,
     imageUrl: "img/go-lang.svg",
-    goto: "/docs/go/introduction",
+    goto: "/docs/go/getting-started",
   },
   {
     title: <>Java</>,

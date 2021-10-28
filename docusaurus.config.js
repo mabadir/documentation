@@ -107,7 +107,7 @@ module.exports = {
             },
             {
               label: "Go SDK",
-              to: "/docs/go/introduction",
+              to: "/docs/go/getting-started",
             },
             {
               label: "Java SDK",
