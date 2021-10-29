@@ -3,7 +3,7 @@
 
     [plugins.inputs]
 
-    skipPatterns = ["#", "www.google-analytics.com", "www.googletagmanager.com"]
+    skipPatterns = ["#", "www.google-analytics.com", "www.googletagmanager.com","https://coveralls.io/repos/github/temporalio/temporal-go-sdk/badge.svg?branch=master"]
     pretty = true
 
 #
